@@ -12,18 +12,20 @@ body {
 /* logo*/
 .logo {
 height:70%;
-width:30%;
+width:25%;
 margin-right:2%;
+ transition: 0.3s;
 
 
 }
 
-.logo: hover {
-height:70%;
+.logo:hover {
+height:75%;
 width:30%;
 margin-right:2%;
 cursor:pointer;
 transform: rotate:(-15deg);
+
 
 
 }
@@ -40,14 +42,18 @@ position:absolute;
 font-size:100%;
 text-align: right;
 margin-right: 0;
-margin-left: 30%;
+margin-left: 3%;
 background-color: white;
+padding: 1%;
+ transition: 0.3s;
+ border-radius: 15px;
 }
 
 .subtitlefirst:hover {
 font-size:130%;
 background-color: white;
  cursor:none;
+  border-radius: 15px;
 
 }
 
@@ -64,7 +70,7 @@ font-family: 'Neucha', cursive;
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding: 2%;
   text-align:center;
   margin:auto;
  background-image:url("Assets/sunshine.jpg");
@@ -76,17 +82,29 @@ font-family: 'Neucha', cursive;
 .sidenav a:hover{
   color: turquoise;
   transform: rotation(15deg);
+  background:white;
+  border-radius:15px;
 }
+
+
+/* i want an object to appear when I hover over Pam, can it be with CSS?*/ 
+
 .sidenavbox {
-  margin-top: 10vh;
+  margin-top:3%;
   text-decoration: none;
   font-size: 25px;
   color: #A40056;
   display: block;
   transition: 0.3s;
   cursor:none;
+  margin-left: 30%;
+  margin-right:30%;
+ 
+
 }
 
+
+}
 
 /*MAIN PAGE*/
 
@@ -99,6 +117,7 @@ a {
 text-decoration: none;	
 color: turquoise;
 cursor:pointer;
+ transition: 0.3s;
 }
 
 a:hover {
@@ -134,19 +153,18 @@ cursor:pointer;
  .images{
   padding: 2%;
   display: block;
-  border-color: white;
   border:2%;
-  height:300px;
-  width:35%; 
-   position:relative;
+  height:25%;
+  width:25%; 
+  position:relative;
 
 
 }
 
 
 .images:hover {
-	height:300px;
-  	width:40%;
+	height:35%;
+  	width:35%;
   	transform: rotate(20deg);
   	position: relative;
 }
@@ -170,7 +188,7 @@ color:white;
 
 .text a:hover {
 font-family: 'Neucha', cursive;
-font-size: 230%;
+font-size: 200%;
 text-decoration: none;
 text-align: right;
 position: relative;
@@ -181,18 +199,12 @@ opacity:100;
 -webkit-animation-name: bounce;
 }
 
-.content2 { 
-	display:inline;
-	position:absolute;
-	margin-left:0;
-	margin-top: 0;
-}
 .content1 { 
 	display:block;
 	position:absolute;
 	margin-right:0;
 	margin-top: 0;
-	 margin-left: 30%;
+	margin-left: 25%;
 }
 
 .lasttwo {
@@ -200,8 +212,8 @@ opacity:100;
 display:block;
 position: absolute;
 margin-top: 0px;
-margin-left: 68%;
-margin-right: -3%;
+margin-left: 55%;
+margin-right:0;
 
 }
 
@@ -261,4 +273,33 @@ position:relative;
 font-size:120%;
 border: 0;
 cursor:none;
+
+}
+
+/* foooter*/
+.tropicw {
+position:absolute;
+height:30%;
+width:10%;
+bottom:5%;
+margin-left: 66%;
+z-index: 80;
+}
+
+.tropicw:hover {
+height:35%;
+width:11%;
+cursor: pointer;
+}
+
+.art {
+position:absolute;
+height:200px;
+width:10%;
+margin-top: 38%;
+margin-left: 75%;
+font-size:500%;
+}
+
+}
 
