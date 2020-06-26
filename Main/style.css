@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Neucha', cursive;
+  transition: background-color .7s;
+  display: inline-block;
+ 
+}
+
+/* logo*/
+.logo {
+height:70%;
+width:30%;
+margin-right:2%;
+
+
+}
+
+.logo: hover {
+height:70%;
+width:30%;
+margin-right:2%;
+cursor:pointer;
+transform: rotate:(-15deg);
+
+
+}
+.intro {
+background-image:url("Assets/sunshine.png");
+  display: block;
+ margin:0;
+ z-index: -10;
+ background-size: 100%;
+
+}
+.subtitlefirst {
+position:absolute;
+font-size:100%;
+text-align: right;
+margin-right: 0;
+margin-left: 30%;
+background-color: white;
+}
+
+.subtitlefirst:hover {
+font-size:130%;
+background-color: white;
+ cursor:none;
+
+}
+
+
+/*SIDE NAV*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+font-family: 'Neucha', cursive;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+  margin:auto;
+ background-image:url("Assets/sunshine.jpg");
+}
+.navbar {
+	  font-family: 'Neucha', cursive;
+
+}
+.sidenav a:hover{
+  color: turquoise;
+  transform: rotation(15deg);
+}
+.sidenavbox {
+  margin-top: 10vh;
+  text-decoration: none;
+  font-size: 25px;
+  color: #A40056;
+  display: block;
+  transition: 0.3s;
+  cursor:none;
+}
+
+
+/*MAIN PAGE*/
+
+body {
+background-color: #A40056;
+
+
+}
+a {
+text-decoration: none;	
+color: turquoise;
+cursor:pointer;
+}
+
+a:hover {
+font-size: 50px;
+transform:rotate(20deg);
+color: yellow;
+
+}
+.buttom {
+	text-decoration: none;	
+color: turquoise;
+font-size: 30px;
+cursor:pointer;
+}
+
+/*ASK YASH WHY DOESNT WORK THE MENU CHANGING SIZE nor COLOR */
+.buttom a:hover {
+font-color: yellow;
+cursor:pointer;
+}
+/*ASK YASH WHY DOESNT WORK THE MENU CHANGING SIZE */
+
+.menu a {
+	font-size:300%;
+	cursor:pointer;
+}
+
+
+.menu a:hover{
+	font-size:400%;
+}
+
+ .images{
+  padding: 2%;
+  display: block;
+  border-color: white;
+  border:2%;
+  height:300px;
+  width:35%; 
+   position:relative;
+
+
+}
+
+
+.images:hover {
+	height:300px;
+  	width:40%;
+  	transform: rotate(20deg);
+  	position: relative;
+}
+
+
+.text {
+font-family: 'Neucha', cursive;
+font-size: 200%;
+text-decoration: none;
+float:left;
+position:relative;
+color:white;
+  opacity:100;
+  top:0;
+  left:0;
+/* doesnt work
+
+-webkit-animation-name: bounce; */
+
+}
+
+.text a:hover {
+font-family: 'Neucha', cursive;
+font-size: 230%;
+text-decoration: none;
+text-align: right;
+position: relative;
+transform: rotate(20deg)
+opacity:100;
+/* doesnt work*/
+
+-webkit-animation-name: bounce;
+}
+
+.content2 { 
+	display:inline;
+	position:absolute;
+	margin-left:0;
+	margin-top: 0;
+}
+.content1 { 
+	display:block;
+	position:absolute;
+	margin-right:0;
+	margin-top: 0;
+	 margin-left: 30%;
+}
+
+.lasttwo {
+
+display:block;
+position: absolute;
+margin-top: 0px;
+margin-left: 68%;
+margin-right: -3%;
+
+}
+
+
+/* header*/
+
+.header {
+display:block;
+margin-left:20%;
+position:absolute;
+font-family: 'Neucha', cursive;
+font-size: 400%;
+
+
+}
+
+.subtitle {
+position:absolute;
+font-size:50%;
+text-align: right;
+margin-right: 0;
+margin-left: 30%;
+}
+
+
+.info {
+text-align:left;
+margin-left: 2%;
+margin-right: 10%;
+font-size:200%;
+margin-top:20%;
+
+}
+
+
+.specialwords:hover {
+cursor:none;
+transform: rotate(-15deg);
+padding:0;
+position:relative;
+font-size:120%;
+text-align: right;
+margin-right: 0;
+margin-left: 30%;
+border: 0;
+
+color:yellow;
+/* it didnt work */
+cursor: url("Assets/cursor.png") 4 12, auto;
+
+}
+
+.specialwordsinsideparagraph:hover {
+transform: rotate(-15deg);
+padding:0;
+position:relative;
+font-size:120%;
+border: 0;
+cursor:none;
+
