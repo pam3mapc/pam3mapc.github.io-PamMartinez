@@ -6,6 +6,7 @@ body {
   font-family: 'Neucha', cursive;
   transition: background-color .7s;
   display: inline-block;
+  background:  #A40056;
  
 }
 
@@ -70,7 +71,6 @@ font-family: 'Neucha', cursive;
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
-  padding: 2%;
   text-align:center;
   margin:auto;
  background-image:url("Assets/sunshine.jpg");
@@ -201,10 +201,14 @@ opacity:100;
 
 .content1 { 
 	display:block;
-	position:absolute;
+	position:fixed;
 	margin-right:0;
 	margin-top: 0;
 	margin-left: 25%;
+
+}
+.content2 {
+	z-index:99;
 }
 
 .lasttwo {
@@ -278,7 +282,7 @@ cursor:none;
 
 /* foooter*/
 .tropicw {
-position:absolute;
+position:fixed;
 height:30%;
 width:10%;
 bottom:5%;
