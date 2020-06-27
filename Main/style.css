@@ -42,18 +42,18 @@ span {
 .logo {
 display:block;
 position:absolute;
-height:70%;
+height:60%;
 width:25%;
 align-items: center;
  transition: 0.3s;
 left:38%;
- top: 20%;
+ top: 25%;
 
 
 }
 
 .logo: hover {
-height:70%;
+height:60%;
 width:30%;
 margin-right:2%;
 cursor:pointer;
@@ -141,6 +141,7 @@ color: turquoise;
 cursor:pointer;
  transition: 0.3s;
  font-size:40px;
+
 
 }
 
