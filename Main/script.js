@@ -28,3 +28,24 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
+/* music in PAMELA MARTINEZ BARRERA*/
+
+let Musicplay=document.getElementById("audio");
+	Musicplay.addEventListener ('mouseenter',playAudio)
+	Musicplay.addEventListener('mouseleave',pauseAudio)
+
+let audio = new Audio('percussion.mp3');
+function playAudio(){
+	audio.play()
+	console.log("play audio")
+}
+
+function pauseAudio(){
+	audio.pause()
+	console.log("pause audio")
+}
+
+
