@@ -1,0 +1,443 @@
+html {
+    scroll-behavior: smooth;
+     height:100vh;
+
+}
+
+body {
+  font-family: 'Neucha', cursive;
+  transition: background-color .7s;
+  display: inline-block;
+  background:  #A40056;
+  cursor:auto;
+  font-family: 'Neucha', cursive;
+}
+
+header {
+  margin:0;
+  padding:0;
+}
+
+span {
+  cursor:none;
+}
+/* background */ 
+
+.video{
+  height:100vh;
+  /* width: 100%; */
+  position: absolute;
+}
+#myVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -99;
+}
+  
+
+/* logo*/
+.logo {
+display:block;
+position:absolute;
+height:60%;
+width:25%;
+align-items: center;
+ transition: 0.3s;
+left:38%;
+ top: 25%;
+
+
+}
+
+.logo: hover {
+height:60%;
+width:30%;
+margin-right:2%;
+cursor:pointer;
+transform: rotate:(-15deg);
+
+
+}
+.intro {
+background-image:url("Assets/sunshine.png");
+  display: block;
+ margin:0;
+ z-index: -10;
+ background-size: 100vh;
+
+}
+.subtitlefirst {
+position:absolute;
+top:82%;
+font-size:20px;
+padding: 1%;
+transition: 0.3s;
+border-radius: 15px;
+color:black;
+display:none;
+background-color:white;
+left:20%;
+}
+
+
+.logo:hover + .subtitlefirst{
+display:block;
+cursor:url("Assets/cursor.png"), auto;
+}
+
+/*SIDE NAV*/
+
+.sidenav {
+  height:100%;
+  width:100%;
+font-family: 'Neucha', cursive;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+  margin:auto;
+ background-image:url("Assets/sunshine.gif");
+ background-size: 100%;
+}
+
+
+}
+.sidenav a:hover{
+  color: turquoise;
+  transform: rotation(15deg);
+}
+.sidenavbox {
+  text-decoration: none;
+  font-size: 50px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  cursor:none;
+  margin-top:5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 0;
+ 
+}
+.sidenavbox:hover {
+ 
+font-size: 60px;
+ 
+}
+
+/*MAIN PAGE*/
+
+
+a {
+text-decoration: none;	
+color: turquoise;
+cursor:pointer;
+ transition: 0.3s;
+ font-size:40px;
+
+
+}
+
+a:hover {
+font-size: 60px;
+color: #ffe400;
+cursor: url("Assets/cursor.png"), auto;
+
+}
+a.documentation{
+font-size:80%;
+
+}
+a.black{
+color:black;
+}
+
+a.black:hover{
+color:#ffe400;
+}
+
+#mySidenav {
+text-decoration: none;	
+color: black;
+font-size:120px;
+position:fixed;
+cursor: url("Assets/cursor.png"), auto;
+}
+
+#mySidenav:hover {
+
+color: #ffe400;
+
+}
+
+
+
+
+.myBtn {
+position:fixed;
+bottom:2%;
+left: 5%;
+ z-index: 98;
+ border: none;
+ outline: none;
+ background-color: yellow;
+ color: black;
+ cursor: url("Assets/cursor.png"), auto;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+ font-family: 'Neucha', cursive;
+
+
+}
+
+.myBtn:hover {
+ background-color:turquoise;
+
+}
+
+
+ .images{
+  padding: 2%;
+  display: block;
+  border-color: white;
+  border:2%;
+  height:200px;
+  width:50%; 
+   position:relative;
+
+
+}
+
+ .images2{
+  padding: 2%;
+  display: block;
+  border-color: white;
+  border:2%;
+  height:200px;
+  width:25%; 
+   position:relative;
+
+
+}
+ .images2{
+cursor: url("Assets/cursor2.png"), auto;
+
+}
+
+
+.images:hover {
+	height:250px;
+  	width:50%;
+  	transform: rotate(20deg);
+  	position: relative;
+	cursor: url("Assets/cursor2.png"), auto;
+}
+
+
+.text {
+font-family: 'Neucha', cursive;
+font-size: 200%;
+text-decoration: none;
+float:left;
+position:relative;
+color:white;
+  opacity:100;
+
+  left:0;
+}
+
+.text a:hover {
+font-family: 'Neucha', cursive;
+font-size: 150%;
+text-decoration: none;
+text-align: right;
+position: relative;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  left:10%;
+  z-index: 99;
+  top:5%;
+
+}
+.flex-container > div {
+  width: 50%;
+  margin-top:5%;
+  padding:0;
+
+
+  }
+.content2 { 
+	position:relative;
+	margin-left:0;
+    z-index:60;
+    top: 5%;
+}
+}
+.content1 { 
+	display:block;
+	position:relative;
+	margin-right:0;
+	margin-top: 5%;
+
+}
+
+.lasttwo {
+
+display:block;
+position:relative;
+margin-top: 5%;
+margin-right:0;
+}
+
+
+/* header*/
+
+.header {
+display:block;
+left:28%;
+position:relative;
+font-family: 'Neucha', cursive;
+font-size: 400%;
+color:black;
+cursor:url("Assets/cursor2.png"), auto;
+padding-top:20px;
+
+
+}
+.header:hover {
+font-size: 420%;
+transition:1s;
+cursor:url("Assets/cursor3.png"), auto;
+}
+
+.subtitle {
+position:relative;
+text-align: right;
+padding:0;
+right:7%;
+margin-right: 0;
+margin-left: 30%;
+font-size:120%;
+}
+
+.box {
+  margin-left: 15%;
+margin-right: 15%;
+font-size:200%;
+margin-top:5%;
+}
+.info {
+text-align:left;
+
+
+
+}
+
+
+.documentation{
+  font-size:120%;
+  display:block;
+  position:relative;
+color: black;
+}
+
+
+.specialwords {
+cursor:none;
+padding:0;
+position:relative;
+font-size:100%;
+margin-right: 0;
+border: 0;
+
+
+}
+.specialwords:hover {
+
+color:yellow;
+cursor:url("Assets/cursor.png"), auto;
+
+}
+
+.specialwordsinsideparagraph:hover {
+font-size:120%;
+cursor:none;
+
+}
+
+/* MORE SECTION*/
+
+
+.more {
+  position:relative;
+}
+.tropicw {
+position:absolute;
+height:35%;
+width:100px;
+bottom:32%;
+right: 50%;
+z-index: 80;
+}
+
+.tropicw:hover {
+height:40%;
+width:110px;
+cursor:url("Assets/cursor3.png"), auto;
+transform:rotate(-10deg);
+}
+
+
+
+.art {
+
+position:relative;
+top:15%;
+height:200px;
+width:10%;
+right:5%;
+font-size:100px;
+color:black;
+}
+
+.art:hover {
+color: #ffe400;
+cursor:url("Assets/cursor2.png"), auto;
+}
+
+
+
+/* documentation */
+
+
+.doc:hover {
+color:turquoise;
+cursor:none;
+}
+
+h2:hover{
+color:turquoise;
+cursor:none;
+}
+
+
+.outsideelements{
+  display:block;
+ right:10%;
+ top:40%;
+  text-align: right;
+  color:#ffe400;
+  position:absolute;
+  font-size:120%;
+}
