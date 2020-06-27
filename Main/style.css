@@ -1,50 +1,57 @@
 html {
     scroll-behavior: smooth;
+     height:100vh;
+
 }
 
 body {
   font-family: 'Neucha', cursive;
   transition: background-color .7s;
   display: inline-block;
-<<<<<<< Updated upstream
-=======
   background:  #A40056;
-  cursor: none;
->>>>>>> Stashed changes
- 
-}
-.video{
-  height:100vh;
-  position: absolute;
+  cursor:auto;
+  font-family: 'Neucha', cursive;
 }
 
-.video-container {
-	position: absolute;
-	top:0;
-	left:0;
-	width:100%;
-	z-index: -99;
+header {
+  margin:0;
+  padding:0;
 }
+
+span {
+  cursor:none;
+}
+/* background */ 
+
+.video{
+  height:100vh;
+  /* width: 100%; */
+  position: absolute;
+}
+#myVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -99;
+}
+  
+
 /* logo*/
 .logo {
 display:block;
 position:absolute;
 height:70%;
-<<<<<<< Updated upstream
-width:30%;
-margin-right:2%;
-=======
 width:25%;
 align-items: center;
  transition: 0.3s;
- margin-left:38%;
- margin-top: 10%;
->>>>>>> Stashed changes
+left:38%;
+ top: 20%;
 
 
 }
 
-<<<<<<< Updated upstream
 .logo: hover {
 height:70%;
 width:30%;
@@ -54,9 +61,6 @@ transform: rotate:(-15deg);
 
 
 }
-=======
-
->>>>>>> Stashed changes
 .intro {
 background-image:url("Assets/sunshine.png");
   display: block;
@@ -66,35 +70,21 @@ background-image:url("Assets/sunshine.png");
 
 }
 .subtitlefirst {
-position:relative;
-font-size:100%;
-<<<<<<< Updated upstream
-text-align: right;
-margin-right: 0;
-margin-left: 30%;
-background-color: white;
-=======
-text-align: center;
-margin-top: 1%;
+position:absolute;
+top:82%;
+font-size:20px;
 padding: 1%;
 transition: 0.3s;
 border-radius: 15px;
 color:black;
 display:none;
->>>>>>> Stashed changes
+background-color:white;
+left:20%;
 }
 
-.subtitlefirst:hover {
-font-size:130%;
-background-color: white;
- cursor:none;
-
-}
 
 .logo:hover + .subtitlefirst{
 display:block;
-height:75%;
-width:30%;
 cursor:url("Assets/cursor.png"), auto;
 }
 
@@ -117,70 +107,51 @@ font-family: 'Neucha', cursive;
  background-size: 100%;
 }
 
-<<<<<<< Updated upstream
+
 }
 .sidenav a:hover{
   color: turquoise;
   transform: rotation(15deg);
 }
 .sidenavbox {
-  margin-top: 10vh;
-=======
-
-
-/* i want an object to appear when I hover over Pam, can it be with CSS?*/ 
-
-.sidenavbox {
->>>>>>> Stashed changes
   text-decoration: none;
   font-size: 50px;
   color: black;
   display: block;
   transition: 0.3s;
   cursor:none;
-<<<<<<< Updated upstream
-=======
   margin-top:5%;
   margin-left: 30%;
   margin-right: 30%;
   margin-bottom: 0;
  
-
->>>>>>> Stashed changes
 }
 .sidenavbox:hover {
  
 font-size: 60px;
  
- 
 }
 
 /*MAIN PAGE*/
-
-body {
-background-color: #A40056;
-
-
-
-}
 
 
 a {
 text-decoration: none;	
 color: turquoise;
 cursor:pointer;
-<<<<<<< Updated upstream
-=======
  transition: 0.3s;
+ font-size:40px;
 
->>>>>>> Stashed changes
 }
 
 a:hover {
-font-size: 50px;
-transform:rotate(20deg);
+font-size: 60px;
 color: #ffe400;
-cursor: url("Assets/cursor2.png"), auto;
+cursor: url("Assets/cursor.png"), auto;
+
+}
+a.documentation{
+font-size:80%;
 
 }
 a.black{
@@ -194,28 +165,41 @@ color:#ffe400;
 #mySidenav {
 text-decoration: none;	
 color: black;
-font-size: 200%;
-cursor:pointer;
-}
-
-/*ASK YASH WHY DOESNT WORK THE MENU CHANGING SIZE nor COLOR */
-
-
+font-size:120px;
+position:fixed;
+cursor: url("Assets/cursor.png"), auto;
 }
 
 #mySidenav:hover {
-color: yellow;
-cursor:pointer;
-size:300%;
+
+color: #ffe400;
 
 }
 
 
-.buttom
-{	
-color: yellow;
-cursor:pointer;
-size:600%;
+
+
+.myBtn {
+position:fixed;
+bottom:2%;
+left: 5%;
+ z-index: 98;
+ border: none;
+ outline: none;
+ background-color: yellow;
+ color: black;
+ cursor: url("Assets/cursor.png"), auto;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+ font-family: 'Neucha', cursive;
+
+
+}
+
+.myBtn:hover {
+ background-color:turquoise;
+
 }
 
 
@@ -224,17 +208,33 @@ size:600%;
   display: block;
   border-color: white;
   border:2%;
-  height:300px;
-  width:35%; 
+  height:200px;
+  width:50%; 
    position:relative;
 
 
 }
 
+ .images2{
+  padding: 2%;
+  display: block;
+  border-color: white;
+  border:2%;
+  height:200px;
+  width:25%; 
+   position:relative;
+
+
+}
+ .images2{
+cursor: url("Assets/cursor2.png"), auto;
+
+}
+
 
 .images:hover {
-	height:300px;
-  	width:40%;
+	height:250px;
+  	width:50%;
   	transform: rotate(20deg);
   	position: relative;
 	cursor: url("Assets/cursor2.png"), auto;
@@ -251,63 +251,52 @@ color:white;
   opacity:100;
 
   left:0;
-/* doesnt work
-
--webkit-animation-name: bounce; */
-
 }
 
 .text a:hover {
 font-family: 'Neucha', cursive;
-<<<<<<< Updated upstream
-font-size: 230%;
-=======
 font-size: 150%;
->>>>>>> Stashed changes
 text-decoration: none;
 text-align: right;
 position: relative;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  left:10%;
+  z-index: 99;
+  top:5%;
+
+}
+.flex-container > div {
+  width: 50%;
+  margin-top:5%;
+  padding:0;
+
+
+  }
 .content2 { 
-	display:inline;
-	position:absolute;
+	position:relative;
 	margin-left:0;
-	margin-top: 0;
+    z-index:60;
+    top: 5%;
+}
 }
 .content1 { 
 	display:block;
-	position:absolute;
+	position:relative;
 	margin-right:0;
-<<<<<<< Updated upstream
-	margin-top: 0;
-	 margin-left: 30%;
-=======
 	margin-top: 5%;
-	margin-left: 25%;
 
-}
-.content2 {
-	z-index:60;
-	 margin-top: 5%;
-	 position:absolute;
->>>>>>> Stashed changes
 }
 
 .lasttwo {
 
 display:block;
-position: absolute;
-<<<<<<< Updated upstream
-margin-top: 0px;
-margin-left: 68%;
-margin-right: -3%;
-=======
+position:relative;
 margin-top: 5%;
-margin-left: 55%;
 margin-right:0;
->>>>>>> Stashed changes
-
 }
 
 
@@ -315,13 +304,13 @@ margin-right:0;
 
 .header {
 display:block;
-margin-left:20%;
-position:absolute;
+left:28%;
+position:relative;
 font-family: 'Neucha', cursive;
 font-size: 400%;
 color:black;
 cursor:url("Assets/cursor2.png"), auto;
-
+padding-top:20px;
 
 
 }
@@ -333,32 +322,42 @@ cursor:url("Assets/cursor3.png"), auto;
 
 .subtitle {
 position:relative;
-font-size:50%;
 text-align: right;
+padding:0;
+right:7%;
 margin-right: 0;
 margin-left: 30%;
-margin:5%;
-
+font-size:120%;
 }
 
-
+.box {
+  margin-left: 15%;
+margin-right: 15%;
+font-size:200%;
+margin-top:5%;
+}
 .info {
 text-align:left;
-margin-left: 2%;
-margin-right: 10%;
-font-size:200%;
-margin-top:20%;
+
+
 
 }
+
+
+.documentation{
+  font-size:120%;
+  display:block;
+  position:relative;
+color: black;
+}
+
 
 .specialwords {
 cursor:none;
 padding:0;
 position:relative;
 font-size:100%;
-text-align: right;
 margin-right: 0;
-margin-left: 30%;
 border: 0;
 
 
@@ -366,77 +365,78 @@ border: 0;
 .specialwords:hover {
 
 color:yellow;
+cursor:url("Assets/cursor.png"), auto;
 
 }
 
 .specialwordsinsideparagraph:hover {
-padding:0;
-position:relative;
 font-size:120%;
-border: 0;
 cursor:none;
 
-<<<<<<< Updated upstream
-=======
 }
 
-/* foooter*/
+/* MORE SECTION*/
+
+
+.more {
+  position:relative;
+}
 .tropicw {
-position:fixed;
-height:30%;
-width:10%;
-bottom:4%;
-margin-left: 77%;
+position:absolute;
+height:35%;
+width:100px;
+bottom:32%;
+right: 50%;
 z-index: 80;
 }
 
 .tropicw:hover {
-height:35%;
-width:11%;
-cursor: pointer;
-transition:0.7s;
-cursor:url("Assets/cursor.png"), auto;
+height:40%;
+width:110px;
+cursor:url("Assets/cursor3.png"), auto;
+transform:rotate(-10deg);
 }
 
+
+
 .art {
-position:fixed;
+
+position:relative;
+top:15%;
 height:200px;
 width:10%;
-margin-top: 38%;
-margin-left: 75%;
-font-size:500%;
+right:5%;
+font-size:100px;
 color:black;
-cursor:url("Assets/cursor3.png"), auto;
 }
 
 .art:hover {
-display:block;
-position:fixed;
-height:200px;
-width:10%;
-margin-top: 38%;
-margin-left: 75%;
-font-size:500%;
-cursor:url("Assets/cursor.png"), auto;
+color: #ffe400;
+cursor:url("Assets/cursor2.png"), auto;
 }
 
 
 
 /* documentation */
+
+
 .doc:hover {
 color:turquoise;
+cursor:none;
 }
 
 h2:hover{
 color:turquoise;
+cursor:none;
 }
 
-.documentation{
-	font-size:100%;
-	margin-top: 20%;
-	margin-left: 10%;
-	margin-right: 10%;
-	display:block;
-	position:relative;
+
+.outsideelements{
+  display:block;
+ right:10%;
+ top:40%;
+  text-align: right;
+  color:#ffe400;
+  position:absolute;
+  font-size:120%;
 }
->>>>>>> Stashed changes

@@ -1,109 +1,78 @@
 <!DOCTYPE html>
 <html>
    <head>
-   	  <title>Pam's world</title>
+      <title>Pam's World</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" href="Assets/icon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
    </head>
    <body>
-
-<header> 
+    <header > 
      
-   	
-		<div id="mySidenav" class="sidenav" style="width: 100%;">
-<<<<<<< Updated upstream
-			 <a href="index.html" class="sidenavbox"> Welcome to Pam's world </a>
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img class="logo" src="Assets/minipam.png"></a>
+    
+    <div id="mySidenav" class="sidenav" style="width:100%;">
+       <p href="index.html" class="sidenavbox" > Welcome to Pam's World! </p>
+        <img onclick="closeNav()" id="logo" class="logo closebtn"src="Assets/minipam.png"> 
         
-      <p class= "subtitlefirst"> Bienvenidx! I am Pamela Martinez. An spiring filmmaker and multimedia artist from Venezuela. I currently live in Abu Dhabi. </p> 
-=======
-      <br> </br>
-			 <p href="index.html" class="sidenavbox"> Welcome to Pam's World! </p>
-         <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img class="logo" src="Assets/minipam.png"></a>
->>>>>>> Stashed changes
+      <p class="subtitlefirst"> Bienvenidx! I am Pamela Martinez. An spiring filmmaker and multimedia artist from Venezuela. I currently live in Abu Dhabi. </p> 
       
-      <p class= "subtitlefirst" id="appears"> Bienvenidx! I am Pamela Martinez. An spiring filmmaker and multimedia artist from Venezuela. I currently live in Abu Dhabi. </p> 
-      
-      </div>
-
-       <div class="buttom">
-       <span id="mySidenav" onclick="openNav()"> * </span>
-
-       <div class="buttom">
-
-      <div class="header" id="audio">
-    PAMELA MARTINEZ BARRERA
-  </div>
-
+       </div>
+       
+       <div class="buttom" id="mySidenav" onclick="openNav()"> * </div>
+   </div>
  </header>
 
-
-
-
-
-
-<div class="content1" > 
- <div> <a href="Feminism.html">
-  <img class="images" src="Assets/feminismb.png" >  </a></div>
-  <br> </br> 
- <div><a href="love.html">
-  	<img class="images" src="Assets/rose3b.png">  </a></div>
-</div>
-
-<div class="lasttwo">
-  <div ><a href="myhome.html">
- <img class="images" src="Assets/palmtreesb.png">  </a></div>
-    
- 
-
-   <div ><a href="films.html">  <img class="images" src="Assets/film.png"> </a></div>
-</div>
-
-
-
-
-<div class= "content2">
-  	<div class="text">
-
-  		<p> <a class="black"href="Feminism.html"> Women </a> </p> 
- 
- 	 <p>  <a class="black"href="love.html">LOVE </a> </p>
-
-  <p> <a class="black"href="myhome.html"> Where is home?</a> </p>
-
- <p> <a class="black"href="films.html"> Film </a> </p> 
- <br> </br>
-
-  <p> <a class="black"href="documentation.html"> <br> Documentation </a> </p> 
-     </div> 
-<<<<<<< Updated upstream
-
-
-=======
-</div>
-	
-	<a id="womanlink" href= "https://www.instagram.com/tropicwoman/"> <img class="tropicw" src="Assets/tropicwoman.png"> </a>
-	<h1 class="art"> + ART </h1>
->>>>>>> Stashed changes
-
-
-
+        <div class="header" id="wink">  PAMELA MARTINEZ BARRERA
   </div>
-<div class="video-container"> 
- <video autoplay muted loop>
-        <source src="Assets/sky.mp4" type="video/mp4">
-   </video>
- 
-<<<<<<< Updated upstream
-   	<button class="buttom" onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Top</button> 
-   </div>
-=======
-   </div>
- 
->>>>>>> Stashed changes
 
 
-   	 <script src="script.js"></script>
+
+
+ <div class="flex-container">
+     <div class= "content2 text" >
+
+           <p> <a class="black" href="Feminism.html"> Women </a> </p> 
+           
+           <p>  <a class="black" href="love.html">LOVE </a> </p>
+
+           <p> <a class="black"shref="myhome.html"> Where is home?</a> </p>
+
+          <p> <a class="black" href="films.html"> Film </a> </p> 
+
+<br> </br> 
+          <p> <a class="black" href="documentation.html"> <br> Documentation </a> </p> 
+     </div> 
+
+  
+    <div class="content1" > 
+        <div>  <img onclick="location.href='Feminism.html'" class="images"  id="drop" src="Assets/feminismb.png" > </div>
+
+        <div> <img onclick="location.href='love.html'" class="images" id="kisses"src="Assets/rose3b.png"> </div>
+    </div>
+
+    <div class="more">
+      <img onclick="location.href='https://www.instagram.com/tropicwoman/'"  class="tropicw" src="Assets/tropicwoman.png"> 
+      <h1 onclick="location.href='random.html'"class="art"> + ART </h1>
+    </div>
+
+    <div class="lasttwo"> 
+          <div> <img onclick="location.href='myhome.html'" class="images"  id="percusion" src="Assets/palmtreesb.png"> </div>
+        
+         <div> <img onclick="location.href='films.html'" class="images" id="film" src="Assets/film.png"> </div> 
+     </div>
+  </div>
+
+
+ 
+ 
+
+     <script src="script.js"></script>
    </body>
+    <div class = "video">
+      <video autoplay muted loop id="myVideo">
+        <source src="Assets/sky.mp4" type="video/mp4">
+      </video>
+    </div>
 
 </html>
